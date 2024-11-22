@@ -1,0 +1,186 @@
+/* Navbar styling */
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+.navbar.scrolled {
+  background-color: rgba(255, 145, 246, 0.8);
+}
+.navbar-brand img {
+  height: 50px;
+}
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #fa39c0;
+}
+
+/* Home section */
+.home-top {
+  height: 100vh;
+  background-image: url('foto.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7391fe;
+  text-align: center;
+}
+.home-top h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Banner experiencia */
+.banner-experiencias {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-description {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+/* Box Section */
+.boxes-section {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  margin-top: 40px;
+}
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.box-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+.box-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+.box-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 20px 20px;
+}
+
+/* Botón para publicar */
+#postBtn {
+  background-color: #e8a7f7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #fc87e1;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #84d3fa;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .social-icons {
+    gap: 15px;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+}
+/* Estilo del tacho de basura en las publicaciones */
+.tweet-item {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #E1E8ED;
+  font-size: 14px;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+  position: absolute;
+  top: 5px; /* Reduce la distancia superior */
+  right: 5px; /* Reduce la distancia derecha */
+  color: #E0245E; /* Rojo para destacar */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem; /* Tamaño más pequeño para el icono */
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b; /* Cambia el color al pasar el mouse */
+}
+

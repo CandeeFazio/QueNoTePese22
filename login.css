@@ -1,0 +1,161 @@
+/* Navbar styling */
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 145, 246, 0.8);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fa39c0;
+}
+
+/* Asegura que tanto el html como el body ocupen toda la altura de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Reducido el padding */
+}
+
+/* Fijamos la imagen de fondo para cubrir toda la pantalla */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('objetivo.jpg'); /* Asegúrate de que la ruta de la imagen esté correcta */
+    background-repeat: no-repeat;
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    height: 100%; /* Asegura que el body ocupe toda la altura disponible */
+    width: 100%; /* Asegura que el body ocupe todo el ancho de la pantalla */
+    overflow: hidden; /* Evita barras de desplazamiento si la imagen es muy grande */
+}
+
+/* Login Box */
+.login-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 15px; /* Reducción más agresiva del padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 85%; /* Ancho reducido aún más */
+    max-width: 280px; /* Máximo ancho reducido */
+    height: auto;
+}
+
+.logo img {
+    width: 90px; /* Logo más pequeño */
+    margin-bottom: 5px; /* Menos espacio debajo del logo */
+}
+
+h2 {
+    font-size: 18px; /* Reducir tamaño del título */
+    margin-bottom: 8px; /* Menos espacio debajo del título */
+    color: #333;
+}
+
+.mb-3 .form-label {
+    font-size: 12px; /* Etiquetas más pequeñas */
+    color: #333;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 6px; /* Reducción del padding en los campos */
+    font-size: 12px; /* Fuente más pequeña */
+    margin-bottom: 6px; /* Menos espacio entre campos */
+}
+
+.form-check-input {
+    margin-top: 2px; /* Menos espacio en los checkboxes */
+}
+
+.btn-primary {
+    background-color: #006f8e;
+    border: none;
+    border-radius: 4px;
+    padding: 6px; /* Botón más compacto */
+    font-size: 12px; /* Fuente más pequeña */
+    cursor: pointer;
+    width: 100%; /* Botón ocupa todo el ancho */
+}
+
+.btn-primary:hover {
+    background-color: #005a73;
+}
+
+.btn-danger {
+    background-color: #db4437;
+    border: none;
+    border-radius: 4px;
+    padding: 6px; /* Botón más compacto */
+    font-size: 12px; /* Fuente más pequeña */
+    cursor: pointer;
+    width: 100%; /* Botón ocupa todo el ancho */
+}
+
+.btn-danger:hover {
+    background-color: #c1351d;
+}
+
+.divider {
+    position: relative;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 12px; /* Menos espacio arriba del divider */
+}
+
+.divider::before {
+    content: "O";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+a {
+    color: #006f8e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
